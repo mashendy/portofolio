@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hen Forge — Visual Design & Web Development Studio</title>
+<link rel="icon" type="image/png" href="hen_forge_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <polygon points="16,2 30,9 30,23 16,30 2,23 2,9" fill="none" stroke="#C8943A" stroke-width="1.5"/>
+          <text x="16" y="21" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="11" font-weight="600" fill="#C8943A">HF</text>
+        </svg>
+        <span>Hen Forge</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('harga').scrollIntoView({behavior:'smooth'})">Pesan Sekarang</button>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#profil" onclick="closeMobile()">Profil</a>
+      <a href="#layanan" onclick="closeMobile()">Layanan</a>
+      <a href="#portofolio" onclick="closeMobile()">Portofolio</a>
+      <a href="#harga" onclick="closeMobile()">Harga</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg-text">FORGE</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">Design & Development Studio</div>
+      <h1 class="hero-title reveal delay-1">
+        Menempa Ide Menjadi<br>
+        <em>Karya Digital</em>
+      </h1>
+      <p class="hero-sub reveal delay-2">
+        Hen Forge hadir untuk memberikan solusi visual dan digital — mulai dari identitas brand yang kuat hingga pengembangan website yang fungsional.
+      </p>
+      <div class="hero-actions reveal delay-3">
+        <button onclick="document.getElementById('portofolio').scrollIntoView({behavior:'smooth'})">Lihat Proyek</button>
+        <a href="#profil" class="link-arrow">Tentang Saya <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-badge reveal delay-2">
+      <div class="badge-inner">
+        <span class="badge-num">Hen</span>
+        <span class="badge-label">Forge<br>Studio</span>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="profil" id="profil">
+    <div class="container">
+      <div class="profil-grid">
+        <div class="profil-left">
+          <div class="section-label reveal">— Tentang Saya</div>
+          <h2 class="reveal delay-1">Hendy<br>Prasetiawan</h2>
+          <div class="gold-line reveal delay-1"></div>
+          <div class="profil-tools reveal delay-2">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP PDO</span>
+            <span>PHP Native</span>
+            <span>Figma</span>
+          </div>
+        </div>
+        <div class="profil-right">
+          <p class="profil-desc reveal delay-1">
+            Selamat datang di <strong>Hen Forge</strong>. Saya adalah seorang pengembang web dan desainer visual yang berdedikasi untuk menciptakan pengalaman digital yang menarik dan efisien.
+          </p>
+          <p class="profil-desc reveal delay-2">
+            Dengan keahlian dalam pengembangan full-stack dan desain grafis, saya membantu klien membangun kehadiran online mereka dari nol — mulai dari perancangan user interface hingga implementasi sistem backend yang kompleks.
+          </p>
+          <p class="profil-desc reveal delay-3">
+            Fokus utama saya adalah memberikan hasil yang tidak hanya terlihat indah secara visual, tetapi juga memberikan solusi nyata bagi kebutuhan bisnis Anda, baik itu melalui website sistem informasi maupun desain identitas brand.
+          </p>
+          <div class="profil-stats reveal delay-4">
+            <div class="stat">
+              <div class="stat-num">Full</div>
+              <div class="stat-label">Stack Dev</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <div class="stat-num">UI/UX</div>
+              <div class="stat-label">Designer</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Komitmen</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LAYANAN SECTION ================= -->
+  <section class="layanan" id="layanan">
+    <div class="container">
+      <div class="section-label reveal">— Apa Yang Saya Lakukan</div>
+      <div class="layanan-header reveal delay-1">
+        <h2>Layanan <em>Unggulan</em></h2>
+        <p class="layanan-subtitle">Kombinasi keahlian estetika visual dan ketajaman fungsional backend untuk bisnis Anda.</p>
+      </div>
+
+      <div class="layanan-grid">
+        <!-- Layanan 1: Full-Stack Web Development -->
+        <div class="layanan-card reveal delay-1">
+          <div class="layanan-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C8943A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+              <line x1="14" y1="4" x2="10" y2="20"></line>
+            </svg>
+          </div>
+          <h3>Full-Stack Web Dev</h3>
+          <p>Membangun sistem berbasis web yang dinamis, aman, dan responsif. Mulai dari aplikasi manajemen internal, portal sistem informasi, hingga web custom menggunakan arsitektur kode yang bersih.</p>
+          <ul class="layanan-tech-tags">
+            <li>PHP Native / PDO</li>
+            <li>MySQL</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <!-- Layanan 2: UI/UX & Digital Design -->
+        <div class="layanan-card reveal delay-2">
+          <div class="layanan-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C8943A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+              <path d="M12 6V12L16 14"></path>
+            </svg>
+          </div>
+          <h3>UI/UX & Visual Design</h3>
+          <p>Merancang antarmuka pengguna digital yang modern dan berpusat pada kenyamanan pengguna (user-friendly). Menempa wireframe kasar menjadi mockup high-fidelity yang siap diimplementasikan.</p>
+          <ul class="layanan-tech-tags">
+            <li>Figma</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+
+        <!-- Layanan 3: Custom System & Integration -->
+        <div class="layanan-card reveal delay-3">
+          <div class="layanan-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C8943A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M3 5V11C3 12.66 7 14 12 14C17 14 21 12.66 21 11V5"></path>
+              <path d="M3 11V17C3 18.66 7 20 12 20C17 20 21 18.66 21 17V11"></path>
+            </svg>
+          </div>
+          <h3>Custom Web System</h3>
+          <p>Pembuatan sistem manajemen data spesifik seperti sistem absensi digital (E-Attendance), platform ticketing real-time, hingga struktur basis data transaksional yang disesuaikan dengan alur bisnis Anda.</p>
+          <ul class="layanan-tech-tags">
+            <li>Database Design</li>
+            <li>CRUD System</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="portfolio" id="portofolio">
+  <div class="container section-header">
+    <h2>Karya <em>Website</em></h2>
+  </div>
+
+  <div class="container">
+    <div class="portfolio-grid">
+      <article class="portfolio-card">
+        <div class="portfolio-thumb"><img src="Cuplikan layar 2026-05-19 121222.png" alt="Sistem Rental Mobil"></div>
+        <div class="portfolio-body">
+          <h3>Sistem Rental Mobil</h3>
+          <p class="portfolio-excerpt">Aplikasi manajemen rental mobil yang mencakup sistem booking online, manajemen armada, dan integrasi database untuk efisiensi operasional.</p>
+          <ul class="portfolio-meta">
+            <li><strong>Klien:</strong> CV. Sewa Mobil</li>
+            <li><strong>Tahun:</strong> 2024</li>
+            <li><strong>Tech:</strong> PHP Native · MySQL · HTML · CSS · JavaScript</li>
+            <li><strong>Lokasi:</strong> Magelang, Indonesia</li>
+          </ul>
+          <div class="portfolio-actions">
+            <a href="https://github.com/mashendy/booking_mobil" target="_blank" rel="noopener" class="btn ghost">Repositori</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-thumb"><img src="image.png" alt="Platform Tiket"></div>
+        <div class="portfolio-body">
+          <h3>Platform Tiket</h3>
+          <p class="portfolio-excerpt">Solusi reservasi tiket digital dengan sistem pemilihan jadwal dan kursi secara real-time yang user-friendly bagi pengguna.</p>
+          <ul class="portfolio-meta">
+            <li><strong>Klien:</strong> PT. Eventindo</li>
+            <li><strong>Tahun:</strong> 2023</li>
+            <li><strong>Tech:</strong> PHP · JavaScript · MySQL</li>
+            <li><strong>Lokasi:</strong> Magelang, Indonesia</li>
+          </ul>
+          <div class="portfolio-actions">
+            <a href="https://github.com/mashendy/projek" target="_blank" rel="noopener" class="btn ghost">Repositori</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="portfolio-card">
+        <div class="portfolio-thumb"><img src="hen_forge_logo.png" alt="E-Attendance & More"></div>
+        <div class="portfolio-body">
+          <h3>E-Attendance & More</h3>
+          <p class="portfolio-excerpt">Beragam aplikasi web custom seperti sistem absensi siswa, landing page bisnis, dan project interaktif personal.</p>
+          <ul class="portfolio-meta">
+            <li><strong>Klien:</strong> Project Pribadi</li>
+            <li><strong>Tahun:</strong> 2022–2025</li>
+            <li><strong>Tech:</strong> PHP Native · MySQL · HTML · CSS · JavaScript</li>
+            <li><strong>Lokasi:</strong> Remote</li>
+          </ul>
+          <div class="portfolio-actions">
+            <a href="https://wa.me/6288802434526" class="btn ghost">Hubungi</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <section class="contact" id="kontak">
+    <div class="container contact-grid">
+      <div>
+        <h3>Kontak</h3>
+        <p><strong>Alamat:</strong> Jl. balong,Tegalrejo,Magelang</p>
+        <p><strong>Email:</strong> hendyawan09@gmail.com</p>
+        <p><strong>Telepon:</strong> +62 888-0243-4526</p>
+      </div>
+      <div>
+        <h3>Ikuti</h3>
+        <p><a href="https://github.com/username" target="_blank" rel="noopener">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">Dribbble</a></p>
+      </div>
+    </div>
+  </section>
+</section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <polygon points="16,2 30,9 30,23 16,30 2,23 2,9" fill="none" stroke="#C8943A" stroke-width="1.2"/>
+          <text x="16" y="21" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="11" font-weight="600" fill="#C8943A">HF</text>
+        </svg>
+        <span>Hen Forge</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Hen Forge · Hendy Prasetiawan · Magelang, Indonesia</p>
+      <p class="footer-fiverr">Crafting Digital Solutions with <strong>Precision</strong></p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
